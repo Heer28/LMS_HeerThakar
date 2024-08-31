@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+ 
+  <title>Library</title>
+  
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="container">
+<div id="header" > 
+<h1 id="logo-text">Library Management System</h1>
+</div>
+<div id="nav">
+<ul>
+  <li><a href="AdminHome.aspx">Home</a></li>
+  <li><a href="AdminViewBooks.aspx">Books</a></li>
+   <li><a href="AdminBookInv.aspx">Add Books</a></li>
+   <li><a href="AdminPage.aspx">Check New </a></li>
+    <li><a href="AdminLogout.aspx">LogOut</a></li>
+  
+</ul>
+</div>
+<div id="site-content">
+<div id="col-left">
+ <form id="form1" runat="server">
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+</form>
+</div>
+
+<div id="col-right">
+
+<img src="images/designer.gif" class="copyright">
+<div style="padding: 30px 10px 10px;">
+<h2 class="h-text-2">Menu</h2>
+<h3 class="h-text-3">   <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AdminHome.aspx">Home</asp:HyperLink></h3>
+<h3 class="h-text-3">   <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/login.aspx">Login As User</asp:HyperLink></h3>
+
+
+
+
+</div>
+
+
+</div>
+</div>
+<div id="footer">
+<p>&copy; Copyright 2022-24. Designed by <a target="_blank"
+ href="#">Heer Thakar</a>
+</p>
+<ul class="footer-nav">
+<li><a href="Home.aspx">Home</a></li>
+    <li><a href="login.aspx">Login As User</a></li>
+  
+  
+
+</ul>
+</div>
+</div>
+</body>
+</html>

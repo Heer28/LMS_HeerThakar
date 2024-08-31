@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AfterLoginMasterPage.master.cs" Inherits="AfterLoginMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+ 
+    <meta charset="utf-8" />
+    <title>Library Management System</title>
+    <script type="text/javascript">
+        function confirmLogout() {
+            return confirm("Are you sure you want to log out?");
+        }
+    </script>
+  
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="container">
+<div id="header" > 
+<h1 id="logo-text">Library Management System</h1>
+</div>
+<div id="nav">
+<ul>
+  <li><a href="AfterLoginHome.aspx">Home</a></li>
+   <li><a href="profile.aspx">Profile</a></li>
+  <li><a href="UserViewBooks.aspx">Books</a></li>
+  <li><a href="IssueBook.aspx">IssueBook</a></li>
+   <li><a href="UserHistory.aspx">History</a></li>
+  <li><a href="LogOut.aspx" onclick="return confirmLogout();">Log&nbsp;Out</a></li>
+  
+  
+</ul>
+</div>
+<div id="site-content">
+<div id="col-left">
+ <form id="form1" runat="server">
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+</form>
+</div>
+
+<div id="col-right">
+
+<img src="images/designer.gif" class="copyright">
+<div style="padding: 30px 10px 10px;">
+<h2 class="h-text-2">Menu</h2>
+<h3 class="h-text-3">   <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AfterLoginHome.aspx">Home</asp:HyperLink></h3>
+<h3 class="h-text-3"> <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/AfterLoginAboutUS.aspx">About Us</asp:HyperLink> </h3>
+<h3 class="h-text-3">   <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/AfterLoginContactUS.aspx">Contact Us</asp:HyperLink></h3>
+
+
+
+</div>
+
+
+</div>
+</div>
+<div id="footer">
+<p>&copy; Copyright 2022-24. Designed by <a target="_blank"
+ href="#">Heer Thakar</a>
+</p>
+<ul class="footer-nav">
+<li><a href="Home.aspx">Home</a></li>
+    <li><a href="create.aspx">Login</a></li>
+  <li><a href="AdminLogin.aspx">Admin Login</a></li>
+  <li><a href="AfterLoginAboutUS.aspx">About&nbsp;us</a></li>
+   <li><a href="AfterLoginContactUS.aspx">Contact&nbsp;us</a></li>
+  
+
+</ul>
+</div>
+</div>
+</body>
+</html>
